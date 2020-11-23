@@ -7,6 +7,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
+<!--
+    TODO: DON'T change to FragmentContainerView yet, for some reason it causes the app to crash without starting. Doing research,  I think it needs to have Navigation figured out first???
+-->
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
