@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Starting New Entry...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                //TODO: Add newEntry here, maybe change Snackbar above to say "Creating New Entry" and maybe de-capitalize new and entry idk
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
