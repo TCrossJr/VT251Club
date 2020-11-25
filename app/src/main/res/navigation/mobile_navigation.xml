@@ -22,4 +22,16 @@
         android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_towns"
         tools:layout="@layout/fragment_towns" />
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
 </navigation>
