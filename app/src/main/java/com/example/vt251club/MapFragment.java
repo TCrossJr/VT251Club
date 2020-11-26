@@ -1,4 +1,4 @@
-repackage com.example.vt251club;
+package com.example.vt251club;
 
 import android.app.Activity;
 
