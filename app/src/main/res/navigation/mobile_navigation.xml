@@ -13,25 +13,25 @@
 
     <fragment
         android:id="@+id/nav_map"
-        android:name="com.example.vt251club.ui.gallery.GalleryFragment"
+        android:name="com.example.vt251club.ui.map.MapFragment"
         android:label="@string/menu_map"
         tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/nav_towns"
-        android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
+        android:name="com.example.vt251club.ui.towns.TownsFragment"
         android:label="@string/menu_towns"
         tools:layout="@layout/fragment_towns" />
 
     <fragment
         android:id="@+id/nav_progress"
-        android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
+        android:name="com.example.vt251club.ui.progress.ProgressFragment"
         android:label="@string/menu_progress"
         tools:layout="@layout/fragment_progress" />
 
     <fragment
         android:id="@+id/nav_history"
-        android:name="com.example.vt251club.ui.slideshow.SlideshowFragment"
+        android:name="com.example.vt251club.ui.history.HistoryFragment"
         android:label="@string/menu_history"
         tools:layout="@layout/fragment_history" />
 </navigation>
