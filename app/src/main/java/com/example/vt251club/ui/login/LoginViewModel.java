@@ -11,6 +11,9 @@ import com.example.vt251club.data.Result;
 import com.example.vt251club.data.model.LoggedInUser;
 import com.example.vt251club.R;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LoginViewModel extends ViewModel {
 
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
@@ -51,12 +54,14 @@ public class LoginViewModel extends ViewModel {
         }
     }
 
-    // A placeholder username validation check
+    private static final String regex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
     private boolean isUserNameValid(String username) {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(username);
         if (username == null) {
             return false;
         }
-        if (username.contains("@")) {
+        if (matcher.matches()) {
             return Patterns.EMAIL_ADDRESS.matcher(username).matches();
         } else {
             return !username.trim().isEmpty();
@@ -65,6 +70,6 @@ public class LoginViewModel extends ViewModel {
 
     // A placeholder password validation check
     private boolean isPasswordValid(String password) {
-        return password != null && password.trim().length() > 5;
+        return password != null && password.trim().length() >= 8;
     }
 }
