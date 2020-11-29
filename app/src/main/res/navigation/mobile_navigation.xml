@@ -39,4 +39,9 @@
         android:name="com.example.vt251club.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/nav_google_maps"
+        android:name="com.example.vt251club.MapsActivity"
+        android:label="maps_activity"
+        tools:layout="@layout/activity_maps" />
 </navigation>
