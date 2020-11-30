@@ -1,6 +1,8 @@
 package com.example.vt251club;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -60,5 +62,11 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public boolean onClick1(MenuItem item){
+        Intent myIntent = new Intent(this, MapsActivity.class);
+        startActivity(myIntent);
+        return true;
     }
 }
