@@ -52,6 +52,6 @@
             android:id="@+id/nav_google_maps"
             android:icon="@android:drawable/ic_dialog_map"
             android:onClick="onClick1"
-            android:title="Google Maps" />
+            android:title="@string/google_maps" />
     </group>
 </menu>
