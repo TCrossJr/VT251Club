@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:label="@string/menu_map"
-        tools:layout="@layout/fragment_map" />
-
-    <fragment
         android:id="@+id/nav_towns"
         android:name="com.example.vt251club.ui.towns.TownsFragment"
         android:label="@string/menu_towns"
