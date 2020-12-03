@@ -1,56 +1,58 @@
-  [
+{
+  "towns": [
     {
-    "town": "Addison",
-    "county": "Addison",
-    "zip": "05491",
-    "established": 1761,
-    "acres": 26707,
-    "latitude": -73.34694,
-    "longitude": 44.07444
-  },
-  {
-    "town": "Albany",
-    "county": "Orleans",
-    "zip": "05820",
-    "established": 1782,
-    "acres": 24627,
-    "latitude": -72.34083,
-    "longitude": 44.73056
-  },
-  {
-    "town": "Alburgh",
-    "county": "Grand Isle",
-    "zip": "05440",
-    "established": 1781,
-    "acres": 18752,
-    "latitude": -73.29222,
-    "longitude": 44.95806
-  },
-  {
-    "town": "Andover",
-    "county": "Windsor",
-    "zip": "05143",
-    "established": 1779,
-    "acres": 28992,
-    "latitude": -72.83944,
-    "longitude": 42.96333
-  },
-  {
-    "town": "Arlington",
-    "county": "Bennington",
-    "zip": "05250",
-    "established": 1761,
-    "acres": 27148,
-    "latitude": -73.18972,
-    "longitude": 43.08306
-  },
-  {
-    "town": "Athens",
-    "county": "Windham",
-    "zip": "05143",
-    "established": 1780,
-    "acres": 8345,
-    "latitude": -72.60139,
-    "longitude": 43.11583
-  }
-]
+      "town": "Addison",
+      "county": "Addison",
+      "zip": "05491",
+      "established": 1761,
+      "acres": 26707,
+      "latitude": -73.34694,
+      "longitude": 44.07444
+    },
+    {
+      "town": "Albany",
+      "county": "Orleans",
+      "zip": "05820",
+      "established": 1782,
+      "acres": 24627,
+      "latitude": -72.34083,
+      "longitude": 44.73056
+    },
+    {
+      "town": "Alburgh",
+      "county": "Grand Isle",
+      "zip": "05440",
+      "established": 1781,
+      "acres": 18752,
+      "latitude": -73.29222,
+      "longitude": 44.95806
+    },
+    {
+      "town": "Andover",
+      "county": "Windsor",
+      "zip": "05143",
+      "established": 1779,
+      "acres": 28992,
+      "latitude": -72.83944,
+      "longitude": 42.96333
+    },
+    {
+      "town": "Arlington",
+      "county": "Bennington",
+      "zip": "05250",
+      "established": 1761,
+      "acres": 27148,
+      "latitude": -73.18972,
+      "longitude": 43.08306
+    },
+    {
+      "town": "Athens",
+      "county": "Windham",
+      "zip": "05143",
+      "established": 1780,
+      "acres": 8345,
+      "latitude": -72.60139,
+      "longitude": 43.11583
+    }
+  ]
+}

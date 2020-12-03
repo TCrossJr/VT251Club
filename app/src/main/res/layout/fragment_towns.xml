@@ -9,31 +9,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="bottom"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ScrollView
-            android:id="@+id/scrollView2"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="72dp" />
+
+        <TextView
+            android:id="@+id/test_json_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/click_vermont"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="32dp" />
-        </ScrollView>
+            android:padding="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:text="JSON_Results" />
 
         <Button
             android:id="@+id/button"
@@ -44,7 +40,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="72dp" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
