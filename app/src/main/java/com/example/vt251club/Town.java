@@ -5,7 +5,7 @@ public class Town {
     private String _town;
     private String _county;
     private String _zip;
-    private int _established;
+    private String _established;
     private int _acres;
     private double _latitude;
     private double _longitude;
@@ -13,7 +13,7 @@ public class Town {
     public Town(String town,
                 String county,
                 String zip,
-                int established,
+                String established,
                 int acres,
                 double latitude,
                 double longitude)
@@ -32,7 +32,7 @@ public class Town {
         _town = "";
         _county = "";
         _zip = "";
-        _established = 0;
+        _established = "";
         _acres =  0;
         _latitude = -7.0;
         _longitude = 4.0;
@@ -52,7 +52,7 @@ public class Town {
         return _zip;
     }
 
-    public int get_established() {
+    public String get_established() {
         return _established;
     }
 
@@ -80,7 +80,7 @@ public class Town {
         this._zip = _zip;
     }
 
-    public void set_established(int _established) {
+    public void set_established(String _established) {
         this._established = _established;
     }
 
