@@ -12,6 +12,174 @@
         "sites": {
           "parks": [],
           "hospitals": [],
+          "airports": ["Yankee Kingdom Airport", "Staton Airport"],
+          "lakes": ["Coggman Pond"],
+          "bridges": [],
+          "dams": [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": ["Larrabees Complex"],
+          "locales": ["Chipmans Marina","Buoy 39 Marina","Montcalm Landing (Historical)"]
+        },
+        "schools": ["Vanderhoof School"],
+        "post_offices": ["Chipmans Post Office (Historical)"],
+        "churches": [],
+        "cemeteries": ["Adams Cemetery"]
+      }
+    },
+    {
+      "town": "Albany",
+      "county": "Orleans",
+      "zip": "05820",
+      "established": 1782,
+      "acres": 24627,
+      "latitude": -72.34083,
+      "longitude": 44.73056,
+      "locations": {
+        "sites": {
+          "parks": ["Craftsbury Common"],
+          "hospitals": [],
+          "airports": [],
+          "lakes": ["Mud Pond"],
+          "bridges": [],
+          "dams": ["Little Hosmer Pond Dam"],
+          "reservoirs": ["Little Hosmer Pond"],
+          "beaches": [],
+          "falls": [],
+          "buildings": ["Albany Library","Albany Town Hall","Craftsbury Public Library"],
+          "locales": ["Mount Norris Boy Scout Reservation"]
+        },
+        "schools": ["Branch School","Craftsbury Elementary School","Craftsbury Academy","Albany Community School"],
+        "post_offices": ["Craftsbury Common Post Office","Albany Post Office","Branch Post Office (Historical)"],
+        "churches": ["Craftsbury Common Congregational Church","Old Covenater Church (Historical)"],
+        "cemeteries": ["Craftsbury Village Cemetery","Craftsbury Common Cemetery","Albany Village Cemetery"]
+      }
+    },
+    {
+      "town": "Alburgh",
+      "county": "Grand Isle",
+      "zip": "05440",
+      "established": 1781,
+      "acres": 18752,
+      "latitude": -73.29222,
+      "longitude": 44.95806,
+      "locations": {
+        "sites": {
+          "parks": ["North Hero State Park","Maquam Bay Wildlife Management Area","Mississquoi National Wildlife Refuge"],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": ["Swanton Covered Bridge","Mississquoi Bay Bridge"],
+          "dams": ["Swanton Dam"],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": ["Swanton Chamber of Commerce"],
+          "locales": ["Campbells Bay Campground","Champlain Valley Campground","Lakewood Campground","Alburgh-Swanton Ferry (Historical)"]
+        },
+        "schools": [""],
+        "post_offices": ["West Swanton Post Office (Historical)","Alburg Springs Post Office (Historical)","East Alburg Post Office (Historical)"],
+        "churches": [],
+        "cemeteries": ["North End Cemetery","Church St Cemetery","Riverside Cemetery","Tabor Cemetery","North End Cemetery","Reynolds Cemetery","Greenwood Cemetery"]
+      }
+    },
+    {
+      "town": "Andover",
+      "county": "Windsor",
+      "zip": "05143",
+      "established": 1779,
+      "acres": 28992,
+      "latitude": -72.83944,
+      "longitude": 42.96333,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": ["Holloway Airport","Smith Airport"],
+          "lakes": [],
+          "bridges": [],
+          "dams": ["Jewell Brook Site Number 1 Dam","Jewell Brook Site Number 2 Dam"],
+          "reservoirs": ["Chester Reservoir","Jewell Brook Site Number 1 Reservoir","Jewell Brook Site Number 2 Reservoir"],
+          "beaches": [],
+          "falls": ["Wymans Falls"],
+          "buildings": [],
+          "locales": ["Horseshoe Acres"]
+        },
+        "schools": ["Simsbury School (Historical)","East Hill School","Boynton Hills School (Historical)","Smokeshire School (Historical)","Wadleigh School (Historical)","Barton School (Historical)"],
+        "post_offices": ["Andover Post Office (Historical)","Simonsville Post Office (Historical)"],
+        "churches": ["Andover Community Church"],
+        "cemeteries": ["Simonsville Cemetery","Simsbury Cemetery","Heald Cemetery","Middletown Cemetery","Pettengill Cemetery","East Hill Cemetery","Smokeshire Cemetery","South Hill Cemetery","Batchelder-Baldwin Cemetery","Parkhurst Cemetery"]
+      }
+    },
+    {
+      "town": "Arlington",
+      "county": "Bennington",
+      "zip": "05250",
+      "established": 1761,
+      "acres": 27148,
+      "latitude": -73.18972,
+      "longitude": 43.08306,
+      "locations": {
+        "sites": {
+          "parks": ["Shaftsburg State Park","Shaftsbury State Park","Arlington Village Historic District"],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": ["Chiselville Covered Bridge","Arlington Green Covered Bridge"],
+          "dams": ["Lake Shaftsbury Dam","Millers Pond Dam"],
+          "reservoirs": ["Shaftsbury, Lake","Millers Pond"],
+          "beaches": [],
+          "falls": [],
+          "buildings": ["Peter Matteson Tavern (Historical)","Topping Tavern Museum","The Arlington Gallery","Arlington Town Hall","Martha Canfield Memorial Free Library"],
+          "locales": ["Grove Picnic Shelter","Camp Avalon","Howells Camping Area","Camping on the Batten Kill Campground","Lawrence Mill (Historical)"]
+        },
+        "schools": ["Mount Pleasant School","Arlington Memorial High School","Fisher Elementary School"],
+        "post_offices": ["East Arlington Post Office","Arlington Post Office","West Arlington Post Office (Historical)"],
+        "churches": ["East Arlington Federated Church","Redeemer Lutheran Church","Saint James Episcopal Church","West Arlington Methodist Church"],
+        "cemeteries": ["Maple Hill Cemetery","Little Rhode Island Cemetery","Wilder Cemetery","Evergreen Cemetery","Matteson Cemetery","South End Cemetery","Saint James Cemetery","West Arlington Cemetery","Sunderland Hill Cemetery"]
+      }
+    },
+    {
+      "town": "Athens",
+      "county": "Windham",
+      "zip": "05143",
+      "established": 1780,
+      "acres": 8345,
+      "latitude": -72.60139,
+      "longitude": 43.11583,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": [],
+          "dams":  [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": [],
+          "locales": []
+        },
+        "schools": [],
+        "post_offices": [],
+        "churches": [],
+        "cemeteries": []
+      }
+    },
+    {
+      "town": "AAAA",
+      "county": "AAAA",
+      "zip": "11111",
+      "established": 17,
+      "acres": 0,
+      "latitude": -7.0,
+      "longitude": 4.0,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
           "airports": [],
           "lakes": [],
           "bridges": [],
@@ -29,49 +197,116 @@
       }
     },
     {
-      "town": "Albany",
-      "county": "Orleans",
-      "zip": "05820",
-      "established": 1782,
-      "acres": 24627,
-      "latitude": -72.34083,
-      "longitude": 44.73056
+      "town": "BBBB",
+      "county": "BBBB",
+      "zip": "22222",
+      "established": 17,
+      "acres": 0,
+      "latitude": -7.0,
+      "longitude": 4.0,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": [],
+          "dams": [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": [],
+          "locales": []
+        },
+        "schools": [],
+        "post_offices": [],
+        "churches": [],
+        "cemeteries": []
+      }
     },
     {
-      "town": "Alburgh",
-      "county": "Grand Isle",
-      "zip": "05440",
-      "established": 1781,
-      "acres": 18752,
-      "latitude": -73.29222,
-      "longitude": 44.95806
+      "town": "CCCC",
+      "county": "CCCC",
+      "zip": "33333",
+      "established": 17,
+      "acres": 0,
+      "latitude": -7.0,
+      "longitude": 4.0,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": [],
+          "dams": [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": [],
+          "locales": []
+        },
+        "schools": [],
+        "post_offices": [],
+        "churches": [],
+        "cemeteries": []
+      }
     },
     {
-      "town": "Andover",
-      "county": "Windsor",
-      "zip": "05143",
-      "established": 1779,
-      "acres": 28992,
-      "latitude": -72.83944,
-      "longitude": 42.96333
+      "town": "DDDD",
+      "county": "DDDD",
+      "zip": "44444",
+      "established": 17,
+      "acres": 0,
+      "latitude": -7.0,
+      "longitude": 4.0,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": [],
+          "dams": [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": [],
+          "locales": []
+        },
+        "schools": [],
+        "post_offices": [],
+        "churches": [],
+        "cemeteries": []
+      }
     },
     {
-      "town": "Arlington",
-      "county": "Bennington",
-      "zip": "05250",
-      "established": 1761,
-      "acres": 27148,
-      "latitude": -73.18972,
-      "longitude": 43.08306
-    },
-    {
-      "town": "Athens",
-      "county": "Windham",
-      "zip": "05143",
-      "established": 1780,
-      "acres": 8345,
-      "latitude": -72.60139,
-      "longitude": 43.11583
+      "town": "EEEE",
+      "county": "EEEE",
+      "zip": "55555",
+      "established": 17,
+      "acres": 0,
+      "latitude": -7.0,
+      "longitude": 4.0,
+      "locations": {
+        "sites": {
+          "parks": [],
+          "hospitals": [],
+          "airports": [],
+          "lakes": [],
+          "bridges": [],
+          "dams": [],
+          "reservoirs": [],
+          "beaches": [],
+          "falls": [],
+          "buildings": [],
+          "locales": []
+        },
+        "schools": [],
+        "post_offices": [],
+        "churches": [],
+        "cemeteries": []
+      }
     }
   ]
 }
