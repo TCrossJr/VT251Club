@@ -2,6 +2,7 @@ package com.example.vt251club;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -9,21 +10,20 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnCameraChangeListener {
 
     private GoogleMap mMap;
+    Marker[] markerArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +50,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Polygons for the towns
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("in.txt"), "UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("polygons.txt"), "UTF-8"));
             String data;
             while((data = reader.readLine()) != null){
                 PolygonOptions polygonOptions = new PolygonOptions().strokeColor(Color.RED);
@@ -67,25 +67,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
 
-        // Marker in Vermont
-        LatLng vermont = new LatLng(44.5588, -72.5778);
-
         // Markers for the towns
-        LatLng berkshire = new LatLng(44.9717, -72.7754);
-        LatLng franklin = new LatLng(44.9813, -72.9166);
-        LatLng alburg = new LatLng(44.9751, -73.3002);
-        LatLng richford = new LatLng(44.9970, -72.6713);
-        LatLng jay = new LatLng(44.9649, -72.4602);
+        markerArray = new Marker[251];
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("markers.txt"), "UTF-8"));
+            String data;
+            int i = 0;
+            while((data = reader.readLine()) != null){
+                String[] splitData = data.split("\\(|\\)|,");
+                String townName = splitData[0];
+                Double firstCoord = Double.parseDouble(splitData[1]);
+                Double secondCoord = Double.parseDouble(splitData[2]);
+                LatLng marker = new LatLng(firstCoord, secondCoord);
+                markerArray[i] = mMap.addMarker(new MarkerOptions().position(marker).title(townName).visible(false));
+                i++;
+            }
+        } catch(IOException e){
+            e.printStackTrace();
+        }
 
-        mMap.addMarker(new MarkerOptions().position(vermont).title("Marker in Vermont"));
-        mMap.addMarker(new MarkerOptions().position(berkshire).title("Berkshire"));
-        mMap.addMarker(new MarkerOptions().position(franklin).title("Franklin"));
-        mMap.addMarker(new MarkerOptions().position(alburg).title("Alburg"));
-        mMap.addMarker(new MarkerOptions().position(richford).title("Richford"));
-        mMap.addMarker(new MarkerOptions().position(jay).title("Jay"));
+        // Detect zoom level change
+        mMap.setOnCameraChangeListener(this);
 
         // Move the camera to focus on Vermont
+        LatLng vermont = new LatLng(44.5588, -72.5778);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(vermont));
         mMap.moveCamera(CameraUpdateFactory.zoomTo(7));
+    }
+
+    @Override
+    public void onCameraChange(CameraPosition cameraPosition){
+        // Make markers invisible below zoom level 9
+        for(int i = 0; i < 251; i++){
+            markerArray[i].setVisible(cameraPosition.zoom > 9);
+        }
     }
 }
