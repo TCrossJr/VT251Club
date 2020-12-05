@@ -1540,6 +1540,15 @@
       "longitude": -72.97972
     },
     {
+      "town": "Rutland Town",
+      "county": "Rutland",
+      "zip": "05701",
+      "established": "1761",
+      "acres": 12320,
+      "latitude": 43.60889,
+      "longitude": -72.97972
+    },
+    {
       "town": "Ryegate",
       "county": "Caledonia",
       "zip": "05042",
@@ -1718,7 +1727,530 @@
       "acres": 25292,
       "latitude": 42.77861,
       "longitude": -73.07833
+    },
+    {
+      "town": "Stannard",
+      "county": "Caledonia",
+      "zip": "05842",
+      "established": "1869",
+      "acres": 8006,
+      "latitude": 44.54389,
+      "longitude": -72.20361
+    },
+    {
+      "town": "Starksboro",
+      "county": "Addison",
+      "zip": "05487",
+      "established": "1780",
+      "acres": 29100,
+      "latitude": 44.22694,
+      "longitude": -72.99778
+    },
+    {
+      "town": "Stockbridge",
+      "county": "Windsor",
+      "zip": "05772",
+      "established": "1761",
+      "acres": 29516,
+      "latitude": 43.76167,
+      "longitude": -72.7375
+    },
+    {
+      "town": "Stowe",
+      "county": "Lamoille",
+      "zip": "05672",
+      "established": "1763",
+      "acres": 46515,
+      "latitude": 44.4875,
+      "longitude": -72.72278
+    },
+    {
+      "town": "Stafford",
+      "county": "Orange",
+      "zip": "05072",
+      "established": "1761",
+      "acres": 28300,
+      "latitude": 43.86306,
+      "longitude": -72.35944
+    },
+    {
+      "town": "Stratton",
+      "county": "Windham",
+      "zip": "05360",
+      "established": "1761",
+      "acres": 29689,
+      "latitude": 43.07972,
+      "longitude": -72.91583
+    },
+    {
+      "town": "Sudbury",
+      "county": "Rutland",
+      "zip": "05733",
+      "established": "1763",
+      "acres": 13760,
+      "latitude": 43.78444,
+      "longitude": -73.18028
+    },
+    {
+      "town": "Sunderland",
+      "county": "Bennington",
+      "zip": "05250",
+      "established": "1761",
+      "acres": 29056,
+      "latitude": 43.06583,
+      "longitude": -73.07861
+    },
+    {
+      "town": "Sutton",
+      "county": "Caledonia",
+      "zip": "05867",
+      "established": "1782",
+      "acres": 24486,
+      "latitude": 44.65361,
+      "longitude": -72.02972
+    },
+    {
+      "town": "Swanton",
+      "county": "Franklin",
+      "zip": "05488",
+      "established": "1780",
+      "acres": 27680,
+      "latitude": 44.90972,
+      "longitude": -73.12056
+    },
+    {
+      "town": "Thetford",
+      "county": "Orange",
+      "zip": "05074",
+      "established": "1761",
+      "acres": 27878,
+      "latitude": 43.83361,
+      "longitude": -72.25083
+    },
+    {
+      "town": "Tinmouth",
+      "county": "Rutland",
+      "zip": "05773",
+      "established": "1761",
+      "acres": 18099,
+      "latitude": 43.44889,
+      "longitude": -73.05528
+    },
+    {
+      "town": "Topsham",
+      "county": "Orange",
+      "zip": "05076",
+      "established": "1763",
+      "acres": 31315,
+      "latitude": 44.12806,
+      "longitude": -72.25556
+    },
+    {
+      "town": "Townshend",
+      "county": "Windham",
+      "zip": "05353",
+      "established": "1753",
+      "acres": 27340,
+      "latitude": 43.07111,
+      "longitude": -72.66444
+    },
+    {
+      "town": "Troy",
+      "county": "Orleans",
+      "zip": "05868",
+      "established": "1801",
+      "acres": 23072,
+      "latitude":  44.92361,
+      "longitude": -72.38611
+    },
+    {
+      "town": "Tunbridge",
+      "county": "Orange",
+      "zip": "05077",
+      "established": "1761",
+      "acres": 28627,
+      "latitude": 43.90028,
+      "longitude": -72.48611
+    },
+    {
+      "town": "Underhill",
+      "county": "Chittenden",
+      "zip": "05489",
+      "established": "1763",
+      "acres": 32864,
+      "latitude": 44.53028,
+      "longitude": -72.8825
+    },
+    {
+      "town": "Vergennes",
+      "county": "Addison",
+      "zip": "05491",
+      "established": "1788",
+      "acres": 1536,
+      "latitude": 44.16722,
+      "longitude": -73.25583
+    },
+    {
+      "town": "Vernon",
+      "county": "Windham",
+      "zip": "05354",
+      "established": "1753",
+      "acres": 12403,
+      "latitude": 42.76444,
+      "longitude": -72.52361
+    },
+    {
+      "town": "Vershire",
+      "county": "Orange",
+      "zip": "05079",
+      "established": "1781",
+      "acres": 23360,
+      "latitude": 43.95944,
+      "longitude": -72.32528
+    },
+    {
+      "town": "Victory",
+      "county": "Orange",
+      "zip": "05858",
+      "established": "1781",
+      "acres": 27500,
+      "latitude": 44.54639,
+      "longitude": -71.82889
+    },
+    {
+      "town": "Waitsfield",
+      "county": "Washington",
+      "zip": "05673",
+      "established": "1782",
+      "acres": 17222,
+      "latitude": 44.18056,
+      "longitude": -72.79806
+    },
+    {
+      "town": "Walden",
+      "county": "Caledonia",
+      "zip": "05873",
+      "established": "1781",
+      "acres": 24787,
+      "latitude": 44.48,
+      "longitude": -72.24667
+    },
+    {
+      "town": "Wallingford",
+      "county": "Rutland",
+      "zip": "05773",
+      "established": "1761",
+      "acres": 27673,
+      "latitude": 43.44917,
+      "longitude": -72.93028
+    },
+    {
+      "town": "Waltham",
+      "county": "Addison",
+      "zip": "05491",
+      "established": "1796",
+      "acres": 5580,
+      "latitude": 44.12361,
+      "longitude": -73.22861
+    },
+    {
+      "town": "Wardsboro",
+      "county": "Addison",
+      "zip": "05355",
+      "established": "1764",
+      "acres": 18739,
+      "latitude": 43.02028,
+      "longitude": -72.81806
+    },
+    {
+      "town": "Warren",
+      "county": "Washington",
+      "zip": "05674",
+      "established": "1789",
+      "acres": 25638,
+      "latitude": 44.11806,
+      "longitude": -72.85778
+    },
+    {
+      "town": "Washington",
+      "county": "Orange",
+      "zip": "05675",
+      "established": "1781",
+      "acres": 24870,
+      "latitude": 44.08,
+      "longitude": -72.42333
+    },
+    {
+      "town": "Waterbury",
+      "county": "Washington",
+      "zip": "05671",
+      "established": "1763",
+      "acres": 30867,
+      "latitude": 44.39194,
+      "longitude": -72.74944
+    },
+    {
+      "town": "Waterford",
+      "county": "Caledonia",
+      "zip": "05819",
+      "established": "1784",
+      "acres": 24416,
+      "latitude": 44.36778,
+      "longitude": -71.93556
+    },
+    {
+      "town": "Waterville",
+      "county": "Lamoille",
+      "zip": "05492",
+      "established": "1824",
+      "acres": 10496,
+      "latitude": 44.71361,
+      "longitude": -72.73333
+    },
+    {
+      "town": "Weathersfield",
+      "county": "Windsor",
+      "zip": "05156",
+      "established": "1761",
+      "acres": 28019,
+      "latitude": 43.39111,
+      "longitude": -72.47611
+    },
+    {
+      "town": "Wells",
+      "county": "Rutland",
+      "zip": "05774",
+      "established": "1761",
+      "acres": 14432,
+      "latitude": 43.43361,
+      "longitude": -73.19611
+    },
+    {
+      "town": "West Fairlee",
+      "county": "Orange",
+      "zip": "05083",
+      "established": "1797",
+      "acres": 14464,
+      "latitude": 43.94306,
+      "longitude": -72.22667
+    },
+    {
+      "town": "West Haven",
+      "county": "Rutland",
+      "zip": "05743",
+      "established": "1792",
+      "acres": 17920,
+      "latitude": 43.64333,
+      "longitude": -73.36389
+    },
+    {
+      "town": "West Rutland",
+      "county": "Rutland",
+      "zip": "05777",
+      "established": "1886",
+      "acres": 11520,
+      "latitude": 43.60889,
+      "longitude": -72.97972
+    },
+    {
+      "town": "West Windsor",
+      "county": "Windsor",
+      "zip": "05089",
+      "established": "1814",
+      "acres": 15808,
+      "latitude": 43.47583,
+      "longitude": -72.42389
+    },
+    {
+      "town": "Westfield",
+      "county": "Orleans",
+      "zip": "05874",
+      "established": "1780",
+      "acres": 25708,
+      "latitude": 44.88,
+      "longitude": -72.48361
+    },
+    {
+      "town": "Westford",
+      "county": "Chittenden",
+      "zip": "05494",
+      "established": "1763",
+      "acres": 25126,
+      "latitude": 44.60694,
+      "longitude": -73.00444
+    },
+    {
+      "town": "Westminster",
+      "county": "Windham",
+      "zip": "05158",
+      "established": "1752",
+      "acres": 29491,
+      "latitude": 43.07472,
+      "longitude": -72.50861
+    },
+    {
+      "town": "Westmore",
+      "county": "Orleans",
+      "zip": "05822",
+      "established": "1781",
+      "acres": 22092,
+      "latitude": 44.75694,
+      "longitude": -72.02639
+    },
+    {
+      "town": "Weston",
+      "county": "Windsor",
+      "zip": "05161",
+      "established": "1799",
+      "acres": 22457,
+      "latitude": 43.31917,
+      "longitude": -72.80139
+    },
+    {
+      "town": "Weybridge",
+      "county": "Addison",
+      "zip": "05753",
+      "established": "1761",
+      "acres": 10886,
+      "latitude": 44.04111,
+      "longitude": -73.23
+    },
+    {
+      "town": "Wheelock",
+      "county": "Caledonia",
+      "zip": "05851",
+      "established": "1785",
+      "acres": 25318,
+      "latitude": 44.57889,
+      "longitude": -72.14056
+    },
+    {
+      "town": "Whiting",
+      "county": "Addison",
+      "zip": "05778",
+      "established": "1763",
+      "acres": 8755,
+      "latitude": 43.86472,
+      "longitude": -73.20222
+    },
+    {
+      "town": "Whitingham",
+      "county": "Windham",
+      "zip": "05361",
+      "established": "1770",
+      "acres": 23731,
+      "latitude": 42.7825,
+      "longitude": -72.86694
+    },
+    {
+      "town": "Williamstown",
+      "county": "Orange",
+      "zip": "05679",
+      "established": "1781",
+      "acres": 25715,
+      "latitude": 44.10694,
+      "longitude": -72.54111
+    },
+    {
+      "town": "Williston",
+      "county": "Chittenden",
+      "zip": "05495",
+      "established": "1763",
+      "acres": 19417,
+      "latitude": 44.43528,
+      "longitude": -73.08028
+    },
+    {
+      "town": "Wilmington",
+      "county": "Chittenden",
+      "zip": "05363",
+      "established": "1751",
+      "acres": 25241,
+      "latitude": 42.87444,
+      "longitude": -72.8625
+    },
+    {
+      "town": "Windham",
+      "county": "Windham",
+      "zip": "05359",
+      "established": "1795",
+      "acres": 16684,
+      "latitude": 43.17361,
+      "longitude": -72.72444
+    },
+    {
+      "town": "Windsor",
+      "county": "Windsor",
+      "zip": "05089",
+      "established": "1761",
+      "acres": 12512,
+      "latitude": 43.47583,
+      "longitude": -72.42389
+    },
+    {
+      "town": "Winhall",
+      "county": "Bennington",
+      "zip": "05340",
+      "established": "1761",
+      "acres": 27948,
+      "latitude": 43.16917,
+      "longitude": -72.92278
+    },
+    {
+      "town": "Winooski",
+      "county": "Chittenden",
+      "zip": "05404",
+      "established": "1921",
+      "acres": 915,
+      "latitude": 44.49556,
+      "longitude": -73.185
+    },
+    {
+      "town": "Wolcott",
+      "county": "Lamoille",
+      "zip": "05680",
+      "established": "1781",
+      "acres": 24979,
+      "latitude": 44.57583,
+      "longitude": -72.44111
+    },
+    {
+      "town": "Woodbury",
+      "county": "Washington",
+      "zip": "05681",
+      "established": "1781",
+      "acres": 24172,
+      "latitude": 44.43639,
+      "longitude": -72.40528
+    },
+    {
+      "town": "Woodford",
+      "county": "Bennington",
+      "zip": "05201",
+      "established": "1753",
+      "acres": 30374,
+      "latitude": 42.88083,
+      "longitude": -73.07778
+    },
+    {
+      "town": "Woodstock",
+      "county": "Windsor",
+      "zip": "05091",
+      "established": "1761",
+      "acres": 28499,
+      "latitude": 43.59611,
+      "longitude": -72.54917
+    },
+    {
+      "town": "Worcester",
+      "county": "Washington",
+      "zip": "05682",
+      "established": "1763",
+      "acres": 24800,
+      "latitude": 44.41667,
+      "longitude": -72.56861
     }
+
 
   ]
 }
