@@ -323,6 +323,466 @@
       "acres":  6758,
       "latitude":  44.48806,
       "longitude": -73.22611
+    },
+    {
+      "town": "Cabot",
+      "county": "Washington",
+      "zip": "05647",
+      "established": "1781",
+      "acres":  23865,
+      "latitude":  44.40361,
+      "longitude": -72.29889
+    },
+    {
+      "town": "Calais",
+      "county": "Washington",
+      "zip": "05648",
+      "established": "1781",
+      "acres":  24332,
+      "latitude":  44.36583,
+      "longitude": -72.46639
+    },
+    {
+      "town": "Cambridge",
+      "county": "Lamoille",
+      "zip": "05444",
+      "established": "1781",
+      "acres": 40742,
+      "latitude": 44.62667,
+      "longitude": -72.81583
+    },
+    {
+      "town": "Canaan",
+      "county": "Essex",
+      "zip": "05901",
+      "established": "1782",
+      "acres": 21248,
+      "latitude": 44.96917,
+      "longitude": -71.5775
+    },
+    {
+      "town": "Castleton",
+      "county": "Rutland",
+      "zip": "05735",
+      "established": "1761",
+      "acres": 24972,
+      "latitude": 43.63472,
+      "longitude": -73.18056
+    },
+    {
+      "town": "Cavendish",
+      "county": "Windsor",
+      "zip": "05142",
+      "established": "1761",
+      "acres":  25369,
+      "latitude": 43.40917,
+      "longitude": -72.60389
+    },
+    {
+      "town": "Charleston",
+      "county": "Orleans",
+      "zip": "05872",
+      "established": "1780",
+      "acres": 23987,
+      "latitude": 44.84167,
+      "longitude": -72.01361
+    },
+    {
+      "town": "Charlotte",
+      "county": "Chittenden",
+      "zip": "05445",
+      "established": "1762",
+      "acres": 26547,
+      "latitude": 44.31528,
+      "longitude": -73.23444
+    },
+    {
+      "town": "Chelsea",
+      "county": "Orange",
+      "zip": "05038",
+      "established": "1781",
+      "acres": 25548,
+      "latitude": 43.98944,
+      "longitude": -72.46333
+    },
+    {
+      "town": "Chester",
+      "county": "Windsor",
+      "zip": "05143",
+      "established": "1754",
+      "acres":  35769,
+      "latitude": 43.28806,
+      "longitude": -72.61556
+    },
+    {
+      "town": "Chittenden",
+      "county": "Rutland",
+      "zip": "05737",
+      "established": "1780",
+      "acres": 46726,
+      "latitude":  43.73,
+      "longitude": -72.91278
+    },
+    {
+      "town": "Clarendon",
+      "county": "Rutland",
+      "zip": "05759",
+      "established": "1761",
+      "acres":  20192,
+      "latitude":  43.52611,
+      "longitude": -72.97917
+    },
+    {
+      "town": "Colchester",
+      "county": "Chittenden",
+      "zip": "05439",
+      "established": "1763",
+      "acres": 23603,
+      "latitude": 44.55972,
+      "longitude": -73.21111
+    },
+    {
+      "town": "Concord",
+      "county": "Essex",
+      "zip": "05824",
+      "established": "1781",
+      "acres": 32921,
+      "latitude": 44.43917,
+      "longitude": -71.83944
+    },
+    {
+      "town": "Corinth",
+      "county": "Orange",
+      "zip": "05039",
+      "established": "1764",
+      "acres": 31065,
+      "latitude": 44.01667,
+      "longitude": -72.37917
+    },
+    {
+      "town": "Cornwall",
+      "county": "Addison",
+      "zip": "05753",
+      "established": "1761",
+      "acres": 18323,
+      "latitude": 43.9625,
+      "longitude": -73.21056
+    },
+    {
+      "town": "Coventry",
+      "county": "Orleans",
+      "zip": "05825",
+      "established": "1780",
+      "acres": 17568,
+      "latitude": 44.87556,
+      "longitude": -72.23444
+    },
+    {
+      "town": "Craftsbury",
+      "county": "Orleans",
+      "zip": "05826",
+      "established": "1781",
+      "acres": 25139,
+      "latitude": 44.64972,
+      "longitude": -72.40222
+    },
+    {
+      "town": "Danby",
+      "county": "Rutland",
+      "zip": "05739",
+      "established": "1761",
+      "acres": 26521,
+      "latitude": 43.35806,
+      "longitude": -73.05806
+    },
+    {
+      "town": "Danville",
+      "county": "Caledonia",
+      "zip": "05828",
+      "established": "1786",
+      "acres": 38963,
+      "latitude": 44.42389,
+      "longitude": -72.12861
+    },
+    {
+      "town": "Dorset",
+      "county": "Bennington",
+      "zip": "05251",
+      "established": "1761",
+      "acres": 30604,
+      "latitude": 43.26917,
+      "longitude": -73.05306
+    },
+    {
+      "town": "Dover",
+      "county": "Windham",
+      "zip": "05356",
+      "established": "1810",
+      "acres": 22592,
+      "latitude": 42.96333,
+      "longitude": -72.83944
+    },
+    {
+      "town": "Dummerston",
+      "county": "Windham",
+      "zip": "05301",
+      "established": "1753",
+      "acres": 19571,
+      "latitude": 42.93,
+      "longitude": -72.59722
+    },
+    {
+      "town": "Duxbury",
+      "county": "Washington",
+      "zip": "05676",
+      "established": "1763",
+      "acres": 27468,
+      "latitude": 44.28861,
+      "longitude": -72.83306
+    },
+    {
+      "town": "East Haven",
+      "county": "Essex",
+      "zip": "05837",
+      "established": "1790",
+      "acres": 23942,
+      "latitude": 44.66167,
+      "longitude": -71.82639
+    },
+    {
+      "town": "East Montpelier",
+      "county": "Washington",
+      "zip": "05651",
+      "established": "1849",
+      "acres": 20473,
+      "latitude": 44.26639,
+      "longitude": -72.57194
+    },
+    {
+      "town": "Eden",
+      "county": "Lamoille",
+      "zip": "05652",
+      "established": "1781",
+      "acres": 40691,
+      "latitude": 44.71139,
+      "longitude": -72.54083
+    },
+    {
+      "town": "Elmore",
+      "county": "Lamoille",
+      "zip": "05657",
+      "established": "1781",
+      "acres": 25056,
+      "latitude": 44.45833,
+      "longitude": -72.49167
+    },
+    {
+      "town": "Enosburg",
+      "county": "Franklin",
+      "zip": "05450",
+      "established": "1780",
+      "acres": 31084,
+      "latitude": 44.86972,
+      "longitude": -72.74639
+    },
+    {
+      "town": "Essex",
+      "county": "Chittenden",
+      "zip": "05451",
+      "established": "1763",
+      "acres": 24966,
+      "latitude": 44.51389,
+      "longitude": -73.06194
+    },
+    {
+      "town": "Fair Haven",
+      "county": "Rutland",
+      "zip": "05731",
+      "established": "1779",
+      "acres": 11289,
+      "latitude": 43.61889,
+      "longitude": -73.26889
+    },
+    {
+      "town": "Fairfax",
+      "county": "Franklin",
+      "zip": "05454",
+      "established": "1763",
+      "acres": 25715,
+      "latitude": 44.69444,
+      "longitude": -73.01056
+    },
+    {
+      "town": "Fairfield",
+      "county": "Franklin",
+      "zip": "05455",
+      "established": "1763",
+      "acres": 43385,
+      "latitude": 44.79167,
+      "longitude": -72.85833
+    },
+    {
+      "town": "Fairlee",
+      "county": "Orange",
+      "zip": "05045",
+      "established": "1761",
+      "acres": 12928,
+      "latitude": 43.93722,
+      "longitude": -72.16806
+    },
+    {
+      "town": "Fayston",
+      "county": "Washington",
+      "zip": "05673",
+      "established": "1782",
+      "acres": 23360,
+      "latitude": 44.22917,
+      "longitude": -72.88444
+    },
+    {
+      "town": "Ferdinand",
+      "county": "Essex",
+      "zip": "05905",
+      "established": "N/A",
+      "acres": 33849,
+      "latitude": 44.71694,
+      "longitude": -71.77667
+    },
+    {
+      "town": "Ferrisburg",
+      "county": "Addison",
+      "zip": "05456",
+      "established": "1762",
+      "acres": 30604,
+      "latitude": 44.2025,
+      "longitude": -73.27694
+    },
+    {
+      "town": "Fletcher",
+      "county": "Franklin",
+      "zip": "05444",
+      "established": "1781",
+      "acres": 24204,
+      "latitude": 44.705,
+      "longitude": -72.90222
+    },
+    {
+      "town": "Franklin",
+      "county": "Franklin",
+      "zip": "05457",
+      "established": "1789",
+      "acres": 24723,
+      "latitude": 44.97889,
+      "longitude": -72.90139
+    },
+    {
+      "town": "Georgia",
+      "county": "Franklin",
+      "zip": "05468",
+      "established": "1763",
+      "acres": 25280,
+      "latitude": 44.72833,
+      "longitude": -73.12972
+    },
+    {
+      "town": "Glastenbury",
+      "county": "Bennington",
+      "zip": "05262",
+      "established": "N/A",
+      "acres": 28467,
+      "latitude": 42.97722,
+      "longitude": -73.07472
+    },
+    {
+      "town": "Glover",
+      "county": "Orleans",
+      "zip": "05839",
+      "established": "1783",
+      "acres": 24236,
+      "latitude": 44.69417,
+      "longitude": -72.22167
+    },
+    {
+      "town": "Goshen",
+      "county": "Addison",
+      "zip": "05733",
+      "established": "1792",
+      "acres": 13625,
+      "latitude": 43.8675,
+      "longitude": -73.00806
+    },
+    {
+      "town": "Grafton",
+      "county": "Windham",
+      "zip": "05146",
+      "established": "1754",
+      "acres": 24569,
+      "latitude": 43.18583,
+      "longitude": -72.61694
+    },
+    {
+      "town": "Granby",
+      "county": "Essex",
+      "zip": "05840",
+      "established": "1761",
+      "acres": 24979,
+      "latitude": 44.60694,
+      "longitude": -71.7325
+    },
+    {
+      "town": "Grand Isle",
+      "county": "Grand Isle",
+      "zip": "05458",
+      "established": "1779",
+      "acres": 10566,
+      "latitude": 44.72278,
+      "longitude": -73.29278
+    },
+    {
+      "town": "Granville",
+      "county": "Addison",
+      "zip": "05747",
+      "established": "1781",
+      "acres": 33420,
+      "latitude": 43.99972,
+      "longitude": -72.83972
+    },
+    {
+      "town": "Greensboro",
+      "county": "Orleans",
+      "zip": "05841",
+      "established": "1781",
+      "acres": 24172,
+      "latitude": 44.605,
+      "longitude": -72.29083
+    },
+    {
+      "town": "Groton",
+      "county": "Caledonia",
+      "zip": "05046",
+      "established": "1789",
+      "acres": 34534,
+      "latitude": 44.24944,
+      "longitude": -72.25833
+    },
+    {
+      "town": "Guildhall",
+      "county": "Essex",
+      "zip": "05905",
+      "established": "1761",
+      "acres": 20940,
+      "latitude": 44.54167,
+      "longitude": -71.64139
+    },
+    {
+      "town": "Guilford",
+      "county": "Windham",
+      "zip": "05301",
+      "established": "1754",
+      "acres": 25529,
+      "latitude": 42.79139,
+      "longitude": -72.62333
     }
+
   ]
 }
