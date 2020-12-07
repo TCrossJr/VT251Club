@@ -1,5 +1,4 @@
-{
-  "towns": [
+[
     {
       "town": "Addison",
       "county": "Addison",
@@ -503,6 +502,15 @@
       "acres": 38963,
       "latitude": 44.42389,
       "longitude": -72.12861
+    },
+    {
+      "town": "Derby",
+      "county": "Orleans",
+      "zip": "05829",
+      "established": "1779",
+      "acres": 31763,
+      "latitude": 44.95111,
+      "longitude": -72.13444
     },
     {
       "town": "Dorset",
@@ -1765,7 +1773,7 @@
       "longitude": -72.72278
     },
     {
-      "town": "Stafford",
+      "town": "Strafford",
       "county": "Orange",
       "zip": "05072",
       "established": "1761",
@@ -2250,7 +2258,4 @@
       "latitude": 44.41667,
       "longitude": -72.56861
     }
-
-
-  ]
-}
+]

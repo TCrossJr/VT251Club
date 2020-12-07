@@ -19,14 +19,13 @@ import com.google.gson.stream.JsonReader;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Map;
 
 public class TownsFragment extends Fragment {
 
     private TownsViewModel townsViewModel;
 
-//    private static final String JSON_FILENAME = "towns.json";
-    private static final String JSON_FILENAME = "towns_detailed.json";
+    private static final String JSON_FILENAME = "towns.json";
+//    private static final String JSON_FILENAME = "towns_detailed.json";
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -38,10 +37,18 @@ public class TownsFragment extends Fragment {
         try {
             JsonReader reader = new JsonReader(new InputStreamReader(getResources().getAssets().open(JSON_FILENAME),"UTF-8"));
             Gson gson = new Gson();
-            Map<?, ?> towns = gson.fromJson(reader, Map.class);
+            TownDetails ts = new TownDetails();
+            String json = gson.toJson(ts);
 
-            for( Map.Entry<?,?> town : towns.entrySet()) System.out.println(town.getKey() + "=" + town.getValue());
+            TownDetails twns = gson.fromJson(reader,TownDetails.class);
+            //tODO: RMV
+            for( Object town : twns ) {
+                System.out.println("name="+town.toString());
+            }
+//            java.util.Collections.sort((List<Town>)Collections.list(twns.getTowns()), Collator.getInstance());
 
+            System.out.println("twns.size->" + twns.size() );
+            System.out.println("Done");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (JsonSyntaxException e) {
