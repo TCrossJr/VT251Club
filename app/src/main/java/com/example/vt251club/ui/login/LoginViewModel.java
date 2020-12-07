@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import android.util.Log;
 import android.util.Patterns;
 
 import com.example.vt251club.data.LoginRepository;
@@ -11,6 +12,15 @@ import com.example.vt251club.data.Result;
 import com.example.vt251club.data.model.LoggedInUser;
 import com.example.vt251club.R;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLEncoder;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,9 +42,25 @@ public class LoginViewModel extends ViewModel {
         return loginResult;
     }
 
-    public void login(String username, String password) {
+    public void login(String username, String password) throws IOException {
         // can be launched in a separate asynchronous job
         Result<LoggedInUser> result = loginRepository.login(username, password);
+        String link = "http://lemuria.cis.vtc.edu/~ebennett/";
+        URL url = new URL(link);
+        String loginInfo = URLEncoder.encode(username,"UTF-8") + " " + URLEncoder.encode(password, "UTF-8");
+        URLConnection connection = url.openConnection();
+        connection.setDoOutput(true);
+        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+        Log.i("test", "login: made it to here");
+        writer.write(loginInfo);
+        writer.flush();
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = null;
+
+        Log.i("yeet", "login: made it to ppp");
 
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
@@ -45,6 +71,7 @@ public class LoginViewModel extends ViewModel {
     }
 
     public void loginDataChanged(String username, String password) {
+
         if (!isUserNameValid(username)) {
             loginFormState.setValue(new LoginFormState(R.string.invalid_username, null));
         } else if (!isPasswordValid(password)) {
