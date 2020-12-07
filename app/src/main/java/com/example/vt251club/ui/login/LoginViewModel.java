@@ -47,6 +47,8 @@ public class LoginViewModel extends ViewModel {
         // can be launched in a separate asynchronous job
         Result<LoggedInUser> result = loginRepository.login(username, password);
 
+        Log.i("test", "email: " + username + "password: " +password);
+
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8)
         {
@@ -57,7 +59,11 @@ public class LoginViewModel extends ViewModel {
             String link = "http://lemuria.cis.vtc.edu/~ebennett/";
             URL url = new URL(link);
 
-            String loginInfo = URLEncoder.encode(username,"UTF-8") + " " + URLEncoder.encode(password, "UTF-8");
+            String loginInfo =URLEncoder.encode("username", "UTF-8")
+                    + "=" + URLEncoder.encode(username, "UTF-8");
+            loginInfo += "&" + URLEncoder.encode("password", "UTF-8")
+                    + "=" + URLEncoder.encode(password, "UTF-8");
+
             URLConnection connection = url.openConnection();
 
             connection.setDoOutput(true);
@@ -67,14 +73,14 @@ public class LoginViewModel extends ViewModel {
             writer.write(loginInfo);
             writer.flush();
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-
-            StringBuilder stringBuilder = new StringBuilder();
-            String line = null;
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+//
+//            StringBuilder stringBuilder = new StringBuilder();
+//            String line = null;
 
             Log.i("test", "login: made it past connection ");
 
-
+            writer.close();
         }
 
 
