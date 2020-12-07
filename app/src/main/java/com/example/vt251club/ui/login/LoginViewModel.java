@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import android.os.StrictMode;
 import android.util.Log;
 import android.util.Patterns;
 
@@ -45,22 +46,37 @@ public class LoginViewModel extends ViewModel {
     public void login(String username, String password) throws IOException {
         // can be launched in a separate asynchronous job
         Result<LoggedInUser> result = loginRepository.login(username, password);
-        String link = "http://lemuria.cis.vtc.edu/~ebennett/";
-        URL url = new URL(link);
-        String loginInfo = URLEncoder.encode(username,"UTF-8") + " " + URLEncoder.encode(password, "UTF-8");
-        URLConnection connection = url.openConnection();
-        connection.setDoOutput(true);
-        OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
-        Log.i("test", "login: made it to here");
-        writer.write(loginInfo);
-        writer.flush();
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8)
+        {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
 
-        StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
+            String link = "http://lemuria.cis.vtc.edu/~ebennett/";
+            URL url = new URL(link);
 
-        Log.i("yeet", "login: made it to ppp");
+            String loginInfo = URLEncoder.encode(username,"UTF-8") + " " + URLEncoder.encode(password, "UTF-8");
+            URLConnection connection = url.openConnection();
+
+            connection.setDoOutput(true);
+
+            OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
+            Log.i("test", "login: made it to here");
+            writer.write(loginInfo);
+            writer.flush();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = null;
+
+            Log.i("test", "login: made it past connection ");
+
+
+        }
+
 
         if (result instanceof Result.Success) {
             LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
