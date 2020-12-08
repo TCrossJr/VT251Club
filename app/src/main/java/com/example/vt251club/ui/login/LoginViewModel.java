@@ -59,11 +59,7 @@ public class LoginViewModel extends ViewModel {
             String link = "http://lemuria.cis.vtc.edu/~ebennett/";
             URL url = new URL(link);
 
-            String loginInfo =URLEncoder.encode("username", "UTF-8")
-                    + "=" + URLEncoder.encode(username, "UTF-8");
-            loginInfo += "&" + URLEncoder.encode("password", "UTF-8")
-                    + "=" + URLEncoder.encode(password, "UTF-8");
-
+            String loginInfo = URLEncoder.encode(username,"UTF-8") + " " + URLEncoder.encode(password, "UTF-8");
             URLConnection connection = url.openConnection();
 
             connection.setDoOutput(true);
