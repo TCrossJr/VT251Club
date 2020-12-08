@@ -22,6 +22,7 @@
     <string name="menu_events">Events</string>
     <string name="menu_resources">Resources</string>
     <string name="menu_login">Login</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -31,9 +32,18 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be at least 8 characters</string>
     <string name="login_failed">"Login failed"</string>
+
     <string name="google_maps">Google Maps</string>
     <string name="view_by_county">View By County</string>
     <string name="view_alphabetically">View Alphabetically</string>
     <string name="town_details">Town Details</string>
     <string name="towns_title">Towns</string>
+
+    <!--Contact Fragment Strings-->
+    <string name="contact_title">How to contact us</string>
+    <string name="contact_send_to">Send an Email to:</string>
+    <string name="contact_Ethan">Ethan Bennett: erb09171@vtc.vsc.edu</string>
+    <string name="contact_Tim">Tim Cross: tac11170@vtc.vsc.edu</string>
+    <string name="contact_Jared">Jared Jackson: jpj07060@vtc.edu</string>
+    <string name="contact_Kevin">Kevin Kunker: kak08300@vtc.vsc.edu</string>
 </resources>

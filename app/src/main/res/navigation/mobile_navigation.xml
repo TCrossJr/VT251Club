@@ -31,11 +31,16 @@
     <fragment
         android:id="@+id/nav_login"
         android:name="com.example.vt251club.ui.login.LoginFragment"
-        android:label="fragment_login"
+        android:label="Login or Sign Up"
         tools:layout="@layout/fragment_login" />
     <activity
         android:id="@+id/nav_google_maps"
         android:name="com.example.vt251club.MapsActivity"
         android:label="maps_activity"
         tools:layout="@layout/activity_maps" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.vt251club.nav_contact"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_nav_contact" />
 </navigation>
