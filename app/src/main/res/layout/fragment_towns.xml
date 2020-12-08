@@ -7,40 +7,95 @@
     tools:context=".ui.towns.TownsFragment">
 
     <LinearLayout
+        android:id="@+id/towns_vertical_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="72dp" />
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/test_json_view"
+            android:id="@+id/towns_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:gravity="bottom|left"
             android:paddingLeft="8dp"
-            android:paddingTop="8dp"
-            android:paddingRight="8dp"
-            android:paddingBottom="8dp"
-            android:text="JSON_Results" />
+            android:text="@string/towns_title"
+            android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
+            android:id="@+id/towns_sort_buttons_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="true"
-            android:text="@string/menu_towns" />
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/view_alphabetically"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/view_alphabetically" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/view_county"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/view_by_county" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/towns_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            tools:layout_editor_absoluteY="104dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/towns_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="@string/town_details"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <TextView
+            android:id="@+id/towns_details_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="[PUT DETAILS HERE]" />
 
     </LinearLayout>
 

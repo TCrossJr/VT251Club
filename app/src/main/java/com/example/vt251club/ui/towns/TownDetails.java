@@ -7,13 +7,17 @@ import java.util.List;
 
 public class TownDetails extends HashSet {
 
-    private List<Town> towns;
+    private ArrayList<Town> towns;
 
     public TownDetails(){
-        this.towns = new ArrayList<>();
+        towns = new ArrayList<>();
     }
 
     public List<Town> getTowns() {
         return towns;
+    }
+
+    public Town getSingleTown( int position) {
+        return towns.get(position);
     }
 }
