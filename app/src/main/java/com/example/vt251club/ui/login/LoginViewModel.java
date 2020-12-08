@@ -74,7 +74,6 @@ public class LoginViewModel extends ViewModel {
 
             Log.i("test", "login: made it past connection ");
 
-
         }
 
 
