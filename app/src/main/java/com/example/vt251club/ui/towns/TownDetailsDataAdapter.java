@@ -30,7 +30,9 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d(TAG, "Town->" + position + "<-position");
-        holder.getDataView().setText(town_det.getSingleTown(position).toString());
+        //TODO: not done
+//        Town t = town_det.getSingleTown(position);
+//        holder.getDataView().setText(t.toString());
     }
 
     @Override
