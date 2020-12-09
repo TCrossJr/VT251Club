@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Starting New Entry...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                //TODO: Add newEntry here
+                Intent newSubmission = new Intent(getApplicationContext(), Submission.class);
+                startActivity(newSubmission);
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

@@ -46,4 +46,265 @@
     <string name="contact_Tim">Tim Cross: tac11170@vtc.vsc.edu</string>
     <string name="contact_Jared">Jared Jackson: jpj07060@vtc.edu</string>
     <string name="contact_Kevin">Kevin Kunker: kak08300@vtc.vsc.edu</string>
+
+    <!-- Submission Strings -->
+    <string name="submission_name">Make a submission</string>
+    <string name="submission_submit">Submit</string>
+    <string name="submission_text_hint">Write your submission for the town here</string>
+    <string name="submission_checkBox">Share Submission</string>
+    <string name="submission_img">Add Image</string>
+    <string name="submission_image_name">Name of your submitted image</string>
+    <string-array name="town_name_list">
+        <item>Addison</item>
+        <item>Albany</item>
+        <item>Alburgh</item>
+        <item>Andover</item>
+        <item>Arlington</item>
+        <item>Athens</item>
+        <item>Averill</item>
+        <item>Bakersfield</item>
+        <item>Baltimore</item>
+        <item>Barnard</item>
+        <item>Barnet</item>
+        <item>Barre City</item>
+        <item>Barre Town</item>
+        <item>Barton</item>
+        <item>Belvidere</item>
+        <item>Bennington</item>
+        <item>Benson</item>
+        <item>Berkshire</item>
+        <item>Berlin</item>
+        <item>Bethel</item>
+        <item>Bloomfield</item>
+        <item>Bolton</item>
+        <item>Bradford</item>
+        <item>Braintree</item>
+        <item>Brandon</item>
+        <item>Brattleboro</item>
+        <item>Bridgewater</item>
+        <item>Bridport</item>
+        <item>Brighton</item>
+        <item>Bristol</item>
+        <item>Brookfield</item>
+        <item>Brookline</item>
+        <item>Brownington</item>
+        <item>Brunswick</item>
+        <item>Burke</item>
+        <item>Burlington</item>
+        <item>Cabot</item>
+        <item>Calais</item>
+        <item>Cambridge</item>
+        <item>Canaan</item>
+        <item>Castleton</item>
+        <item>Cavendish</item>
+        <item>Charleston</item>
+        <item>Charlotte</item>
+        <item>Chelsea</item>
+        <item>Chester</item>
+        <item>Chittenden</item>
+        <item>Clarendon</item>
+        <item>Colchester</item>
+        <item>Concord</item>
+        <item>Corinth</item>
+        <item>Cornwall</item>
+        <item>Coventry</item>
+        <item>Craftsbury</item>
+        <item>Danby</item>
+        <item>Danville</item>
+        <item>Derby</item>
+        <item>Dorset</item>
+        <item>Dover</item>
+        <item>Dummerston</item>
+        <item>Duxbury</item>
+        <item>East Haven</item>
+        <item>East Montpelier</item>
+        <item>Eden</item>
+        <item>Elmore</item>
+        <item>Enosburg</item>
+        <item>Essex</item>
+        <item>Fair Haven</item>
+        <item>Fairfax</item>
+        <item>Fairfield</item>
+        <item>Fairlee</item>
+        <item>Fayston</item>
+        <item>Ferdinand</item>
+        <item>Ferrisburg</item>
+        <item>Fletcher</item>
+        <item>Franklin</item>
+        <item>Georgia</item>
+        <item>Glastenbury</item>
+        <item>Glover</item>
+        <item>Goshen</item>
+        <item>Grafton</item>
+        <item>Granby</item>
+        <item>Grand Isle</item>
+        <item>Granville</item>
+        <item>Greensboro</item>
+        <item>Groton</item>
+        <item>Guildhall</item>
+        <item>Guilford</item>
+        <item>Halifax</item>
+        <item>Hancock</item>
+        <item>Hardwick</item>
+        <item>Hartford</item>
+        <item>Hartland</item>
+        <item>Highgate</item>
+        <item>Hinesburg</item>
+        <item>Holland</item>
+        <item>Hubbardton</item>
+        <item>Huntington</item>
+        <item>Hyde Park</item>
+        <item>Ira</item>
+        <item>Irasburg</item>
+        <item>Isle La Motte</item>
+        <item>Jamaica</item>
+        <item>Jay</item>
+        <item>Jericho</item>
+        <item>Johnson</item>
+        <item>Killington</item>
+        <item>Kirby</item>
+        <item>Landgrove</item>
+        <item>Leicester</item>
+        <item>Lemington</item>
+        <item>Lewis</item>
+        <item>Lincoln</item>
+        <item>Londonderry</item>
+        <item>Lowell</item>
+        <item>Ludlow</item>
+        <item>Lunenburg</item>
+        <item>Lyndon</item>
+        <item>Maidstone</item>
+        <item>Manchester</item>
+        <item>Marlboro</item>
+        <item>Marshfield</item>
+        <item>Mendon</item>
+        <item>Middlebury</item>
+        <item>Middlesex</item>
+        <item>Middletown Springs</item>
+        <item>Milton</item>
+        <item>Monkton</item>
+        <item>Montgomery</item>
+        <item>Montpelier</item>
+        <item>Moretown</item>
+        <item>Morgan</item>
+        <item>Morristown</item>
+        <item>Mount Holly</item>
+        <item>Mount Tabor</item>
+        <item>New Haven</item>
+        <item>Newark</item>
+        <item>Newbury</item>
+        <item>Newfane</item>
+        <item>Newport City</item>
+        <item>Newport Town</item>
+        <item>North Hero</item>
+        <item>Northfield</item>
+        <item>Norton</item>
+        <item>Norwich</item>
+        <item>Orange</item>
+        <item>Orwell</item>
+        <item>Panton</item>
+        <item>Pawlet</item>
+        <item>Peacham</item>
+        <item>Peru</item>
+        <item>Pittsfield</item>
+        <item>Pittsford</item>
+        <item>Plainfield</item>
+        <item>Plymouth</item>
+        <item>Pomfret</item>
+        <item>Poultney</item>
+        <item>Pownal</item>
+        <item>Proctor</item>
+        <item>Putney</item>
+        <item>Randolph</item>
+        <item>Reading</item>
+        <item>Readsboro</item>
+        <item>Richford</item>
+        <item>Richmond</item>
+        <item>Ripton</item>
+        <item>Rochester</item>
+        <item>Rockingham</item>
+        <item>Roxbury</item>
+        <item>Royalton</item>
+        <item>Rupert</item>
+        <item>Rutland City</item>
+        <item>Rutland Town</item>
+        <item>Ryegate</item>
+        <item>Saint Albans City</item>
+        <item>Saint Albans Town</item>
+        <item>Saint George</item>
+        <item>Saint Johnsbury</item>
+        <item>Salisbury</item>
+        <item>Sandgate</item>
+        <item>Searsburg</item>
+        <item>Shaftsbury</item>
+        <item>Sharon</item>
+        <item>Sheffield</item>
+        <item>Shelburne</item>
+        <item>Sheldon</item>
+        <item>Shoreham</item>
+        <item>Shrewsbury</item>
+        <item>Somerset</item>
+        <item>South Burlington</item>
+        <item>South Hero</item>
+        <item>Springfield</item>
+        <item>Stamford</item>
+        <item>Stannard</item>
+        <item>Starksboro</item>
+        <item>Stockbridge</item>
+        <item>Stowe</item>
+        <item>Strafford</item>
+        <item>Stratton</item>
+        <item>Sudbury</item>
+        <item>Sunderland</item>
+        <item>Sutton</item>
+        <item>Swanton</item>
+        <item>Thetford</item>
+        <item>Tinmouth</item>
+        <item>Topsham</item>
+        <item>Townshend</item>
+        <item>Troy</item>
+        <item>Tunbridge</item>
+        <item>Underhill</item>
+        <item>Vergennes</item>
+        <item>Vernon</item>
+        <item>Vershire</item>
+        <item>Victory</item>
+        <item>Waitsfield</item>
+        <item>Walden</item>
+        <item>Wallingford</item>
+        <item>Waltham</item>
+        <item>Wardsboro</item>
+        <item>Warren</item>
+        <item>Washington</item>
+        <item>Waterbury</item>
+        <item>Waterford</item>
+        <item>Waterville</item>
+        <item>Weathersfield</item>
+        <item>Wells</item>
+        <item>West Fairlee</item>
+        <item>West Haven</item>
+        <item>West Rutland</item>
+        <item>West Windsor</item>
+        <item>Westfield</item>
+        <item>Westford</item>
+        <item>Westminster</item>
+        <item>Westmore</item>
+        <item>Weston</item>
+        <item>Weybridge</item>
+        <item>Wheelock</item>
+        <item>Whiting</item>
+        <item>Whitingham</item>
+        <item>Williamstown</item>
+        <item>Williston</item>
+        <item>Wilmington</item>
+        <item>Windham</item>
+        <item>Windsor</item>
+        <item>Winhall</item>
+        <item>Winooski</item>
+        <item>Wolcott</item>
+        <item>Woodbury</item>
+        <item>Woodford</item>
+        <item>Woodstock</item>
+        <item>Worcester</item>
+    </string-array>
 </resources>

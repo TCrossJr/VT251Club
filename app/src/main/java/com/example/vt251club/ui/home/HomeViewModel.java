@@ -10,10 +10,12 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is a Home Fragment");
+        mText.setValue("To add a new submission click bottom right button");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
+
 }
