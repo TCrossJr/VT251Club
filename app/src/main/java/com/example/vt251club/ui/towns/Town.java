@@ -15,26 +15,34 @@ public class Town {
                 String established,
                 int acres,
                 double latitude,
-                double longitude)
-    {
+                double longitude) {
         _town = town;
         _county = county;
         _zip = zip;
         _established = established;
-        _acres =  acres;
+        _acres = acres;
         _latitude = latitude;
         _longitude = longitude;
     }
 
-    public Town()
-    {
+    public Town() {
         _town = "";
         _county = "";
         _zip = "";
         _established = "";
-        _acres =  0;
+        _acres = 0;
         _latitude = 4.0;
         _longitude = -7.0;
+    }
+
+    public Town(Town town) {
+        this._town = town._town;
+        this._county = town._county;
+        this._zip = town._zip;
+        this._established = town._established;
+        this._acres = town._acres;
+        this._latitude = town._latitude;
+        this._longitude = town._longitude;
     }
 
     public String get_town() {
