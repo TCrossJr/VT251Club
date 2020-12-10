@@ -61,6 +61,24 @@ public class TownsFragment extends Fragment {
         rView.setLayoutManager(layoutManager);
         rView.scrollToPosition(0);
         rView.setAdapter(town_adapter);
+        alphaButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_alpha);
+                town_adapter.notifyDataSetChanged();
+                rView.setAdapter(town_adapter);
+            }
+        });
+        countyButton.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_county);
+                town_adapter.notifyDataSetChanged();
+                rView.setAdapter(town_adapter);
+            }
+        });
         return root;
     }
 }
