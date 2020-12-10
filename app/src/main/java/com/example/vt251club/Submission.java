@@ -57,7 +57,7 @@ public class Submission extends AppCompatActivity {
         }
         if(Arrays.asList(getResources().getStringArray(R.array.town_name_list)).contains(searchText) && !submissionText.matches("")){
             //Put code to Enter submission in db here
-            
+
         }
     }
 
