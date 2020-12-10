@@ -16,8 +16,10 @@
             android:id="@+id/towns_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="bottom|left"
+            android:gravity="start"
+            android:paddingStart="8dp"
             android:paddingLeft="8dp"
+            android:paddingRight="8dp"
             android:text="@string/towns_title"
             android:textSize="30sp" />
 
@@ -64,11 +66,12 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/towns_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="500dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
+            android:fadingEdge="none"
             android:paddingLeft="4dp"
             android:paddingTop="4dp"
             android:paddingRight="4dp"
@@ -79,13 +82,14 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="8dp" />
+            android:layout_height="16dp" />
 
         <TextView
             android:id="@+id/towns_details_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="8dp"
+            android:paddingRight="8dp"
             android:text="@string/town_details"
             tools:layout_editor_absoluteY="104dp" />
 
@@ -95,6 +99,8 @@
             android:layout_height="match_parent"
             android:paddingLeft="8dp"
             android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
             android:text="[PUT DETAILS HERE]" />
 
     </LinearLayout>

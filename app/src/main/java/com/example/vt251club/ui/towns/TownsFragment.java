@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,13 +47,17 @@ public class TownsFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_towns, container, false);
 
         rView = root.findViewById(R.id.towns_recycler_view);
+        detailsView = root.findViewById(R.id.towns_details_view);
         alphaButton = root.findViewById(R.id.view_alphabetically);
         countyButton = root.findViewById(R.id.view_county);
-        detailsView = root.findViewById(R.id.towns_details_view);
 
         layoutManager = new LinearLayoutManager(getActivity());
-        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_alpha);
+//        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_alpha);
+        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_county);
+        town_adapter.notifyDataSetChanged();
 
+        RecyclerView.ItemDecoration divider = new DividerItemDecoration(getContext(), layoutManager.getOrientation());
+        rView.addItemDecoration(divider);
         rView.setLayoutManager(layoutManager);
         rView.scrollToPosition(0);
         rView.setAdapter(town_adapter);

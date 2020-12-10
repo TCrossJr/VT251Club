@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,9 +31,15 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d(TAG, "Town->" + position + "<-position");
-        //TODO: not done
-//        Town t = town_det.getSingleTown(position);
-//        holder.getDataView().setText(t.toString());
+        Town town = town_det.getSingleTown(position);
+        holder.setTownName(town.get_town());
+        holder.setCountyName(town.get_county());
+        holder.frameLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //todo: ADD new view from here of TownDetails
+            }
+        });
     }
 
     @Override
@@ -41,16 +48,23 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView itmView;
+        private FrameLayout frameLayout;
+        private TextView townName;
+        private TextView countyName;
 
         public ViewHolder(@NonNull View view) {
             super(view);
-
-            itmView = view.findViewById(R.id.item_view);
+            frameLayout = view.findViewById(R.id.town_frame);
+            townName = view.findViewById(R.id.list_item_town);
+            countyName = view.findViewById(R.id.list_item_county);
         }
 
-        public TextView getDataView() {
-            return itmView;
+        public void setTownName(String town) {
+            this.townName.setText(town);
+        }
+
+        public void setCountyName(String county) {
+            this.countyName.setText(county);
         }
     }
 }

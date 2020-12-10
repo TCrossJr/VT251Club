@@ -159,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sortTownByCounty(ArrayList<Town> townList) {
-        ArrayList<Town> result = new ArrayList<>(0);
-
         ArrayList<Town> addison = new ArrayList<>(0);
         ArrayList<Town> bennington = new ArrayList<>(0);
         ArrayList<Town> caledonia = new ArrayList<>(0);
@@ -175,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Town> washington = new ArrayList<>(0);
         ArrayList<Town> windham = new ArrayList<>(0);
         ArrayList<Town> windsor = new ArrayList<>(0);
+
+        ArrayList<Town> result = new ArrayList<>(0);
 
         for( int i = 0; i < townList.size(); i++ ) {
             Town t = new Town(townList.get(i));
