@@ -37,7 +37,7 @@
     <string name="view_by_county">View By County</string>
     <string name="view_alphabetically">View Alphabetically</string>
     <string name="town_details">Town Details</string>
-    <string name="towns_title">Towns</string>
+    <string name="towns_title">Vermont Towns</string>
 
     <!--Contact Fragment Strings-->
     <string name="contact_title">How to contact us</string>
