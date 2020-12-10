@@ -2,9 +2,13 @@ package com.example.vt251club.data.db;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity
 public class SubmissionDatabase {
+    @PrimaryKey(autoGenerate = true)
+    public int postID;
+
     @ColumnInfo(name = "town")
     public String townName;
 

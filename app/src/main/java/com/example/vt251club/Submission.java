@@ -1,10 +1,9 @@
 package com.example.vt251club;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -12,6 +11,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
+
+import com.example.vt251club.data.db.AppDatabase;
+import com.example.vt251club.data.db.SubmissionDatabase;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Arrays;
@@ -26,6 +30,7 @@ public class Submission extends AppCompatActivity {
     private static final int PICK_IMAGE = 10;
     Uri imageUri;
 
+    AppDatabase submissionDB;
 
 
     @Override
@@ -45,6 +50,12 @@ public class Submission extends AppCompatActivity {
         search.setThreshold(3);
         search.setAdapter(adapter);
 
+
+        //initialize submission database
+        submissionDB = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "SubmissionDatabase").allowMainThreadQueries().build();
+
+
+
     }
 
     public void submit(View view){
@@ -56,8 +67,17 @@ public class Submission extends AppCompatActivity {
             Snackbar.make(view, "You can submit and empty description", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
         }
         if(Arrays.asList(getResources().getStringArray(R.array.town_name_list)).contains(searchText) && !submissionText.matches("")){
-            //Put code to Enter submission in db here
+            SubmissionDatabase newSubmission = new SubmissionDatabase();
 
+            newSubmission.submissionText = submissionText;
+            newSubmission.townName = searchText;
+
+            if(imageUri != null && !imageUri.equals(Uri.EMPTY)){
+                newSubmission.imageUri = imageUri.toString();
+            }
+
+            submissionDB.SubmissionDao().newSubmission(newSubmission);
+            Log.i("db", "Submitted: \nTown name: "+newSubmission.townName+"\nSubmission text: "+newSubmission.submissionText +"\nImage uri:"+newSubmission.imageUri);
         }
     }
 

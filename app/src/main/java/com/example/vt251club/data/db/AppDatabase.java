@@ -1,7 +1,6 @@
 package com.example.vt251club.data.db;
 
 import androidx.room.Database;
-import androidx.room.Entity;
 import androidx.room.RoomDatabase;
 
 
