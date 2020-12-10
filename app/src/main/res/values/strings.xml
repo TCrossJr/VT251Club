@@ -54,6 +54,7 @@
     <string name="submission_checkBox">Share Submission</string>
     <string name="submission_img">Add Image</string>
     <string name="submission_search_hint">Search Town</string>
+    <string name="isImageSelected">No Image Selected</string>
     <string-array name="town_name_list">
         <item>Addison</item>
         <item>Albany</item>

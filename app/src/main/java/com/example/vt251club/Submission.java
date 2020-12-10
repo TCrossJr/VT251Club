@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
@@ -24,8 +24,8 @@ import java.util.Arrays;
 public class Submission extends AppCompatActivity {
     AutoCompleteTextView searchTextField;
     EditText submissionTextField;
-    CheckBox shareCheckBox;
     Button addImageButton;
+    TextView isImage;
 
     private static final int PICK_IMAGE = 10;
     Uri imageUri;
@@ -41,13 +41,13 @@ public class Submission extends AppCompatActivity {
         addImageButton = findViewById(R.id.addImageButton);
         searchTextField = findViewById(R.id.submissionSearch);
         submissionTextField = findViewById(R.id.submissionText);
-        shareCheckBox = findViewById(R.id.checkBox);
+        isImage = findViewById(R.id.isImage);
 
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.town_name_list, android.R.layout.select_dialog_singlechoice);
         AutoCompleteTextView search = findViewById(R.id.submissionSearch);
-        search.setThreshold(3);
+        search.setThreshold(2);
         search.setAdapter(adapter);
 
 
@@ -95,6 +95,7 @@ public class Submission extends AppCompatActivity {
             imageUri = intent.getData();
         }
         addImageButton.setText("Change Image");
+        isImage.setText("Image will be saved");
     }
 
 
