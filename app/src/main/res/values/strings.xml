@@ -53,7 +53,7 @@
     <string name="submission_text_hint">Write your submission for the town here</string>
     <string name="submission_checkBox">Share Submission</string>
     <string name="submission_img">Add Image</string>
-    <string name="submission_image_name">Name of your submitted image</string>
+    <string name="submission_search_hint">Search Town</string>
     <string-array name="town_name_list">
         <item>Addison</item>
         <item>Albany</item>
