@@ -17,5 +17,15 @@ public interface SubmissionDao {
     @Query("SELECT image FROM submissiondatabase")
     String[] getAllImages();
 
+    @Query("SELECT postID FROM SubmissionDatabase")
+    Integer[] getAllPostId();
 
+    @Query("SELECT image FROM submissiondatabase WHERE postID LIKE :id")
+    String getAllImageFromID(int id);
+
+    @Query("SELECT town FROM submissiondatabase WHERE postID LIKE :id")
+    String getAllTownFromID(int id);
+
+    @Query("SELECT text FROM submissiondatabase WHERE postID LIKE :id")
+    String getAllTextFromID(int id);
 }
