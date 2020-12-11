@@ -1,6 +1,10 @@
 package com.example.vt251club.ui.towns;
 
-public class Town {
+import android.os.Parcelable;
+
+import java.io.Serializable;
+
+public class Town implements Serializable {
     private String _town;
     private String _county;
     private String _zip;
