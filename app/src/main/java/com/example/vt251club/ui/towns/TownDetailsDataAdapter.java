@@ -18,14 +18,6 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
 
     private static final String TAG = "TownDetailsDataAdapter";
     private static TownDetails town_det;
-    private TextView display;
-    private TextView displayTown;
-    private TextView displayCounty;
-    private TextView displayZip;
-    private TextView displayEst;
-    private TextView displayAcres;
-    private TextView displayLat;
-    private TextView displayLong;
 
     public TownDetailsDataAdapter(TownDetails townDetails) {
         town_det = townDetails;
@@ -47,6 +39,7 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
         holder.frameLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TownDetailsFragment.currentTown = new Town(town);
                 Intent intent = new Intent(v.getContext(),TownDetailsFragment.class);
                 ContextCompat.startActivity(v.getContext(),intent, null);
             }

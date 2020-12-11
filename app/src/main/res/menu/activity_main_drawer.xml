@@ -10,11 +10,11 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_towns"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_towns" />
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="@string/menu_towns"/>
         <item
             android:id="@+id/nav_progress"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_menu_myplaces"
             android:title="@string/menu_progress" />
         <item
             android:id="@+id/nav_photo_album"
@@ -35,7 +35,7 @@
             android:title="@string/menu_contact" />
         <item
             android:id="@+id/nav_login"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_lock_idle_lock"
             android:title="@string/menu_login" />
     </group>
 </menu>
