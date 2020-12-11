@@ -80,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
 
         // initialize town data
         initData();
-
-
     }
 
     @Override
@@ -143,13 +141,13 @@ public class MainActivity extends AppCompatActivity {
             }.getType();
             town_details_issorted = new ArrayList<>();
             town_details_alpha = new TownDetails();
+
             Gson gson = gBuilder.create();
             town_details_issorted = gson.fromJson(reader, tDetailsType);
             town_details_alpha.addAll(town_details_issorted);
 
             town_details_county = new TownDetails();
             sortTownByCounty(town_details_issorted);
-
 
         } catch (IOException e) {
             e.printStackTrace();
