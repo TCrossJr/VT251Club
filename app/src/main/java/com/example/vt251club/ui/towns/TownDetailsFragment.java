@@ -1,38 +1,33 @@
 package com.example.vt251club.ui.towns;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.os.PersistableBundle;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import android.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.vt251club.R;
 
-public class TownDetailsFragment extends Fragment {
+public class TownDetailsFragment extends AppCompatActivity {
     private TextView displayDetails;
     TextView detailsTownName;
     TextView detailsTownCounty;
     TextView detailsTownZip;
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(R.layout.fragment_town_details, container, false);
-        detailsTownName = view.findViewById(R.id.details_town_name);
-        detailsTownCounty = view.findViewById(R.id.details_town_county);
-        detailsTownZip = view.findViewById(R.id.details_town_zip);
-        Town t = (Town) getArguments().getSerializable("t");
-        detailsTownName.setText(t.get_town());
-        detailsTownCounty.setText(t.get_county());
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        setContentView(R.layout.fragment_town_details);
 
-        Log.d("wtf", "wtf");
-        return view;
+        detailsTownName = findViewById(R.id.details_town_name);
+        detailsTownCounty = findViewById(R.id.details_town_county);
+        detailsTownZip = findViewById(R.id.details_town_zip);
+
+        //TODO: RMV
+        Town test = new Town("Test", "TestCounty", "05401", "1776", 17000, 44.0, -73.0);
+        detailsTownName.setText(test.get_town());
+        detailsTownCounty.setText(test.get_county());
     }
 }
