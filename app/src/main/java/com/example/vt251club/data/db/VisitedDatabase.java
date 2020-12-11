@@ -14,4 +14,6 @@ public class VisitedDatabase {
 
     @ColumnInfo(name = "visited", defaultValue = "false")
     public Boolean visitedBool;
+
+
 }

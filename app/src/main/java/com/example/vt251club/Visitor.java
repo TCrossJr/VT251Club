@@ -9,14 +9,12 @@ import androidx.room.Room;
 import com.example.vt251club.data.db.AppDatabase;
 import com.example.vt251club.data.db.VisitedDatabase;
 
-
-public class TownVisited extends AppCompatActivity {
+public class Visitor extends AppCompatActivity {
     AppDatabase visitedDB;
     boolean getVisited;
     VisitedDatabase setTownVisited = null;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void visit(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //initialization of visitedDB
@@ -25,7 +23,7 @@ public class TownVisited extends AppCompatActivity {
         visitedDB.VisitedDao().setTownVisited(setTownVisited);
     }
 
-    public void getVisited(View view) {
-        VisitedDatabase getVisited = new VisitedDatabase();
+    public void setTownVisited(View view) {
+        VisitedDatabase setTownVisited = new VisitedDatabase();
     }
 }
