@@ -17,8 +17,8 @@ public class TownDetailsFragment extends AppCompatActivity {
     TextView detailsTownZip;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_town_details);
 
         detailsTownName = findViewById(R.id.details_town_name);
