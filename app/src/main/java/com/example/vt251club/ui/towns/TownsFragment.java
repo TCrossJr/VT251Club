@@ -53,8 +53,8 @@ public class TownsFragment extends Fragment {
         countyButton = root.findViewById(R.id.view_county);
 
         layoutManager = new LinearLayoutManager(getActivity());
-//        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_alpha);
-        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_county);
+        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_alpha);
+//        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_county);
         town_adapter.notifyDataSetChanged();
 
         RecyclerView.ItemDecoration divider = new DividerItemDecoration(getContext(), layoutManager.getOrientation());
