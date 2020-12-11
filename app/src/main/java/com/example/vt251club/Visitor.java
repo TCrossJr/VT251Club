@@ -11,11 +11,12 @@ import com.example.vt251club.data.db.VisitedDatabase;
 
 public class Visitor extends AppCompatActivity {
     AppDatabase visitedDB;
-    boolean visitedBool;
+    boolean getVisited;
     VisitedDatabase setTownVisited = null;
 
     protected void visit(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //initialization of visitedDB
         visitedDB = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "VisitedDatabase").allowMainThreadQueries().build();
 
