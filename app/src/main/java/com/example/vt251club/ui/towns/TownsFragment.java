@@ -1,5 +1,6 @@
 package com.example.vt251club.ui.towns;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -33,9 +34,6 @@ public class TownsFragment extends Fragment {
     private Button countyButton;
     private TextView detailsView;
 
-//    AppDatabase visitedDB;
-//    boolean getVisited;
-//    VisitedDatabase setTownVisited;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,20 +43,6 @@ public class TownsFragment extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        visitedDB = Room.databaseBuilder(getContext().getApplicationContext(), AppDatabase.class, "VisitedDatabase").allowMainThreadQueries().build();
-//        setTownVisited = new VisitedDatabase();
-//        String[] towns = getResources().getStringArray(R.array.town_name_list);
-//        if(visitedDB.VisitedDao().getVisited(true).length == 0){
-//            for (int i = 0; i < towns.length; i++) {
-//                setTownVisited.townName = towns[i];
-//                setTownVisited.visitedBool = false;
-//                visitedDB.VisitedDao().setTownVisited(setTownVisited);
-//            }
-//        }
-
-
-
-
         townsViewModel =
                 new ViewModelProvider(requireActivity()).get(TownsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_towns, container, false);
@@ -73,14 +57,11 @@ public class TownsFragment extends Fragment {
 //        town_adapter = new TownDetailsDataAdapter(MainActivity.town_details_county);
         town_adapter.notifyDataSetChanged();
 
-
-
         RecyclerView.ItemDecoration divider = new DividerItemDecoration(getContext(), layoutManager.getOrientation());
         rView.addItemDecoration(divider);
         rView.setLayoutManager(layoutManager);
         rView.scrollToPosition(0);
         rView.setAdapter(town_adapter);
-
         alphaButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

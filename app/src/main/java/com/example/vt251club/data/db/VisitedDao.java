@@ -8,7 +8,7 @@ import androidx.room.Query;
 @Dao
 public interface VisitedDao {
 
-    @Query("SELECT townName FROM VisitedDatabase WHERE visited LIKE :bool")
+    @Query("SELECT townName FROM VisitedDatabase WHERE visited = 1")
     String[] getVisited(Boolean bool);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

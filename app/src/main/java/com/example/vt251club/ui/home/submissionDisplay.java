@@ -1,12 +1,14 @@
 package com.example.vt251club.ui.home;
 
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -72,15 +74,15 @@ public class submissionDisplay extends Fragment {
             townRow.addView(townText);
             tableLayout.addView(townRow);
 
-//
-//            if(submissionDB.SubmissionDao().getAllImageFromID(i)!= null && !submissionDB.SubmissionDao().getAllImageFromID(i).equals(Uri.EMPTY)){
-//                TableRow imageRow = new TableRow(getActivity());
-//                Uri imageUri = Uri.parse(submissionDB.SubmissionDao().getAllImageFromID(i));
-//                ImageView imageView = new ImageView(getContext());
-//                imageView.setImageURI(imageUri);
-//                imageRow.addView(imageView);
-//                tableLayout.addView(imageRow);
-//            }
+
+            if(submissionDB.SubmissionDao().getAllImageFromID(i)!= null && !submissionDB.SubmissionDao().getAllImageFromID(i).equals(Uri.EMPTY)){
+                TableRow imageRow = new TableRow(getActivity());
+                Uri imageUri = Uri.parse(submissionDB.SubmissionDao().getAllImageFromID(i));
+                ImageView imageView = new ImageView(getContext());
+                imageView.setImageURI(imageUri);
+                imageRow.addView(imageView);
+                tableLayout.addView(imageRow);
+            }
 
             TableRow textRow = new TableRow(getActivity());
             TextView textText = new TextView(getActivity());
