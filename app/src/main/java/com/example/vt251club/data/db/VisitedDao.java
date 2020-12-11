@@ -13,4 +13,5 @@ public interface VisitedDao {
     @Query("SELECT townName FROM visiteddatabase WHERE visited LIKE :bool")
     String[] getVisited(Boolean bool);
 
+
 }

@@ -1,6 +1,7 @@
 package com.example.vt251club.ui.towns;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +10,12 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import android.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vt251club.MainActivity;
 import com.example.vt251club.R;
 
 public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsDataAdapter.ViewHolder> {
@@ -65,15 +69,22 @@ public class TownDetailsDataAdapter extends RecyclerView.Adapter<TownDetailsData
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Intent intent = new Intent(v.getContext(),TownDetailsFragment.class);
-//                    RecyclerView rv = super.v.findViewById(R.id.towns_recycler_view);
-/*                    TextView townView = v.findViewById(R.id.details_town_name);
-                    TextView countyView = v.findViewById(R.id.details_town_county);
+                    //Intent intent = new Intent(v.getContext(),TownDetailsFragment.class);
+                    //RecyclerView rv = v.findViewById(R.id.towns_recycler_view);
+                    //TextView townView = fragment.detailsTownName;
+                    //TextView countyView = fragment.detailsTownCounty;
                     int position = ViewHolder.super.getLayoutPosition();
                     Town t = town_det.getSingleTown(position);
-                    townView.setText(t.get_town());
-                    countyView.setText(t.get_county());
-                */}
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("t", t);
+                    TownDetailsFragment fragment = new TownDetailsFragment();
+                    fragment.setArguments(bundle);
+                    ((FragmentActivity) view.getContext()).getFragmentManager().beginTransaction()
+                            .replace(R.id.towns_recycler_view, fragment)
+                            .commit();
+                    //townView.setText(t.get_town());
+                    //countyView.setText(t.get_county());
+                }
             });
         }
 
