@@ -9,4 +9,6 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract SubmissionDao SubmissionDao();
 
     public abstract VisitedDao VisitedDao();
+
+
 }

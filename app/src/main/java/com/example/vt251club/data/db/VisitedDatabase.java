@@ -5,6 +5,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+
 @Entity
 public class VisitedDatabase {
     @NonNull
@@ -13,4 +14,6 @@ public class VisitedDatabase {
 
     @ColumnInfo(name = "visited", defaultValue = "false")
     public Boolean visitedBool;
+
+
 }

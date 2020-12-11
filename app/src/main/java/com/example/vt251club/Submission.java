@@ -32,7 +32,6 @@ public class Submission extends AppCompatActivity {
 
     AppDatabase submissionDB;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,10 +53,7 @@ public class Submission extends AppCompatActivity {
         //initialize submission database
         submissionDB = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "SubmissionDatabase").allowMainThreadQueries().build();
 
-
-
     }
-
     public void submit(View view){
         String submissionText = String.valueOf((submissionTextField.getText()));
         String searchText = String.valueOf(searchTextField.getText());
